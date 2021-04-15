@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
               children: [
                 Testimonials(
                   title:
-                      '"   Band aa behey gothun\n   meehaku bunelaafa in\n   salhi comment eh   "',
+                      '"   Band aa behey gothun\n   meehaku bunelaafa in\n   alhi comment eh   "',
                   by: '- Author one',
                 ),
                 Testimonials(
