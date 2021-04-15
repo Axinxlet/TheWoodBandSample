@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_wood_band_sample/src/widgets/custom_appbar.dart';
+import 'package:the_wood_band_sample/src/widgets/custom_navbar.dart';
 
 class BandMembers extends StatelessWidget {
   static String get pageName => 'Band Members';
@@ -8,10 +8,18 @@ class BandMembers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppbar(pageTitle: 'Band Members'),
-      body: Center(
-        child: Text('LineUp'),
-      ),
-    );
+        appBar: AppBar(
+          title: CustomNavbar.mainIcon,
+          actions: CustomNavbar.pageName(
+            'Band Members',
+          ),
+          centerTitle: true,
+        ),
+        body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('asset/images/band-wood.jpg'),
+                  fit: BoxFit.fitWidth)),
+        ));
   }
 }

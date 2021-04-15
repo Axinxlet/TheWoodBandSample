@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:the_wood_band_sample/src/pages/band_members.dart';
+import 'package:the_wood_band_sample/src/pages/contact.dart';
+import 'package:the_wood_band_sample/src/pages/gallery.dart';
 import 'package:the_wood_band_sample/src/widgets/custom_drawer.dart';
 import 'package:the_wood_band_sample/src/widgets/custom_navbar.dart';
 import 'package:the_wood_band_sample/src/widgets/testimonials.dart';
@@ -10,6 +13,10 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   bool get getLayout => BoxConstraints().maxWidth > 600;
+
+  void _navigateTo({Widget page}) => Navigator.of(context).push(
+      MaterialPageRoute(fullscreenDialog: true, builder: (context) => page));
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -64,9 +71,9 @@ class _HomeState extends State<Home> {
         ),
       ),
       drawer: CustomDrawer(
-        onBandMembers: () {},
-        onGallery: () {},
-        onContact: () {},
+        onBandMembers: () => _navigateTo(page: BandMembers()),
+        onGallery: () => _navigateTo(page: Gallery()),
+        onContact: () => _navigateTo(page: Contact()),
       ),
     );
   }
