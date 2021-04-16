@@ -64,7 +64,10 @@ class _HomeState extends State<Home> {
             Text(
               'The\nWood\nBand',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white, fontSize: 60.0),
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 60.0,
+                  fontFamily: 'Special Elite'),
             ),
           ],
         ),
