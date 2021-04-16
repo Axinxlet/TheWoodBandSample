@@ -5,7 +5,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      darkTheme: ThemeData.dark().copyWith(
+      theme: ThemeData(
+          primaryColor: Colors.black,
           textTheme:
               Theme.of(context).textTheme.apply(fontFamily: 'Special Elite')),
       home: Home(),

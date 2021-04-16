@@ -29,7 +29,6 @@ class _HomeState extends State<Home> {
   Widget _mobileView() {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
         title: CustomNavbar.mainIcon,
         centerTitle: true,
         actions: CustomNavbar.pageName('Home'),
@@ -61,11 +60,11 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-            SizedBox(height: 200.0),
+            SizedBox(height: 140.0),
             Text(
               'The\nWood\nBand',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white, fontSize: 70.0),
+              style: TextStyle(color: Colors.white, fontSize: 60.0),
             ),
           ],
         ),

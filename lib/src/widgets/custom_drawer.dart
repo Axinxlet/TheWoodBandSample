@@ -32,24 +32,21 @@ class CustomDrawer extends StatelessWidget {
           ListTile(
             title: Text(
               'Band Members',
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             onTap: onBandMembers,
           ),
           ListTile(
             title: Text(
               'Gallery',
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             onTap: onGallery,
           ),
           ListTile(
             title: Text(
               'Contact',
-              style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
             onTap: onContact,
           ),
@@ -60,7 +57,6 @@ class CustomDrawer extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Text(
               'Allrights Reserved',
-              style: TextStyle(color: Colors.white),
             ),
           ),
         ],
